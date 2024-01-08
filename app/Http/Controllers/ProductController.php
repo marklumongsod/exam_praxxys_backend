@@ -45,7 +45,7 @@ class ProductController extends Controller
     
             return response()->json(['step2' => ['images' => $images]], 200);
         } else {
-            // Handle case where no images were uploaded
+          
             return response()->json(['error' => 'No images were uploaded'], 400);
         }
     }
@@ -88,7 +88,6 @@ class ProductController extends Controller
     return response()->json(['message' => 'Product created successfully'], 201);
 }
 
-// Controller
 
 public function update_step1(Request $request, $id)
 {
